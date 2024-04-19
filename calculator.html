@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--
+      Name: Vincent Nguyen
+      Date: 4/18/2024
+      School: Mesa Commuinty College
+      Class:  CIS166AA 26678
+      Project Name: Simple Calculator
+    -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Javascipt Simnple Calculator by Vincent N.</h1>
+    <!--- Navigation -->
+    <nav id="navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="calculator.html">JS Calculator</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- Where  to place a calculator -->
+    <form id="calculator">
+      Value 1: <input type="text" id="value1">
+      Value 2: <input type="text" id="value2">
+      Operator:
+      <select id="operator">
+        <option value="add">Add</option>
+        <option value="sub">Subtract</option>
+        <option value="multi">Multiply</option>
+        <option value="div">Divide</option>
+        <option value="mod">Modulo</option>
+      </select>
+      <button type="button" onclick="calc()">Calculate</button>
+    </form>
+
+    <div id="result"></div>
+  </main>
+  <script src="main.js"></script>
+  <script src="calc.js"></script>
+</body>
+
+</html>
