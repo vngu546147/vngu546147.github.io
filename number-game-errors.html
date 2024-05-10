@@ -14,6 +14,7 @@ Create your own JavaScript comments to indicate where you fixed the code. Was it
       Class:  CIS166AA 26678
       Project Name: Number Guessing Game
     -->
+    <link rel="stylesheet" href="style.css">
     <meta charset="utf-8">
 
     <title>Number guessing game</title>
@@ -34,8 +35,18 @@ Create your own JavaScript comments to indicate where you fixed the code. Was it
       }
     </style>
   </head>
-
   <body>
+    <header>
+      <header></header>
+        <!--- Navigation -->
+        <nav id="navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="calculator.html">JS Calculator</a></li>
+          </ul>
+        </nav>
+      </header>
+
       <h1>Number guessing game</h1>
 
       <p>We have selected a random number between 1 and 100. See if you can guess it in 10 turns or less. We'll tell you if your guess was too high or too low.</p>
@@ -127,4 +138,8 @@ Create your own JavaScript comments to indicate where you fixed the code. Was it
 	  randomNumber = Math.floor(Math.random() * 100) + 1; // Fixed logic error: randomNumber should be between 1 and 100
   }
 </script>
+<footer>
+  <a href="mailto:VIN2167847@maricopa.edu">Student Email</a>
+</footer>
+<script src="main.js"></script>
 </html>
