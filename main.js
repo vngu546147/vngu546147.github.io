@@ -22,7 +22,7 @@ function addNavItemClickListeners() {
 }
 
 // Call the function to add click event listeners to navigation items
-addNavItemClickListeners();s
+addNavItemClickListeners();
 
 // This script is form project 5
 const displayedImage = document.querySelector('.displayed-img');

@@ -1,40 +1,42 @@
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   color: #333;
   background-color: #f4f4f4;
-  margin: 0;
-  padding: 0;
 }
+
+/* Header Styles */
 
 header {
   background-color: #333;
   color: #fff;
   padding: 1rem;
+  text-align: center; /* added text-align center */
 }
+
+/* Navigation Styles */
 
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: flex; /* added flexbox for horizontal navigation */
+  justify-content: space-between; /* added justify-content for even spacing */
 }
 
-.center { 
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.text-center {
-text-align: center
-}
-
-nav ul li {
-  display: inline-block;
+nav li {
   margin-right: 1rem;
 }
 
-nav ul li:last-child {
+nav li:last-child {
   margin-right: 0;
 }
 
@@ -47,6 +49,8 @@ nav a {
 nav a:hover {
   background-color: #555;
 }
+
+/* Main Content Styles */
 
 main {
   max-width: 800px;
@@ -65,12 +69,14 @@ main p {
   margin-bottom: 1rem;
 }
 
+/* Footer Styles */
+
 footer {
   background-color: #333;
   color: #fff;
   padding: 1rem;
   text-align: center;
-  margin-top: 2rem;
+  clear: both; /* added clear both to move footer to the bottom */
 }
 
 footer a {
@@ -80,4 +86,16 @@ footer a {
 
 footer a:hover {
   color: #ccc;
+}
+
+/* Utility Classes */
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-center {
+  text-align: center;
 }
