@@ -1,0 +1,88 @@
+body {
+    background-color: #fff;
+    color: #333;
+    font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding: 1em;
+    margin: 0;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  form {
+    border: 1px solid grey;
+    width: 80%;
+    max-width: 500px;
+    margin: auto;
+    padding-right: 10px;
+  }
+  form h2 {
+    text-align: center;
+  }
+  /* Remove default list style and padding */
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  label {
+    display: inline-block;
+    margin: 0 10px 0 0;
+    text-align: right;
+    width: 120px; /* Adjust this as needed */
+  
+  }
+  /* Uniform width for inputs and textarea */
+  input[type="text"],
+  input[type="tel"],
+  textarea {
+    padding: 10px;
+    width: 300px;
+  }
+  /*styles for valie and invalid input*/
+  input:valid, textarea:valid {
+    border-color: green;
+  }
+  
+  input:invalid, textarea:invalid {
+    border-color: red;
+  } 
+  
+  /* Align the label with the top of the textarea */
+  label[for="comment"] {
+    vertical-align: top;
+  }
+  form li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  form li:nth-child(4) {
+    align-items: flex-start;
+  }
+  
+  /* Center the button within its list item */
+  li button {
+    display: block;
+    margin: 20px auto;
+  }
+  
+  @media (max-width: 540px) {
+    form{
+      padding: 10px;
+    }
+    form li {
+      display: block;
+    }
+    label {
+      display: inline-block;
+      text-align: left;
+      width: 100%;
+      padding-bottom: 5px;
+    }
+    input[type="text"],
+    input[type="tel"],
+    textarea {
+      width: 100%; /* Adjust this as needed */
+    }
+  }
